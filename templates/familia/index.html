@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+Familia
+{% endblock %}
+
+
+{% block content %}
+<h1>Contenido de la aplicacion familia</h1>
+<br><br>
+
+<p><a class="btn btn-primary" href="{% url 'familia:familia_crear' %}">Agregar Familiares</a></p>
+<p><a class="btn btn-primary" href="{% url 'familia:familia_listar' %}">Listar Familiares</a></p>
+{% endblock content %}
